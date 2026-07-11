@@ -10,6 +10,7 @@ from database import (
 
 print("=" * 40)
 print("     STUDENT MANAGEMENT SYSTEM")
+print("Learning Git")
 print("=" * 40)
 
 while True:
