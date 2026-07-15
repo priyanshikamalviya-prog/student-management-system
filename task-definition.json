@@ -1,0 +1,24 @@
+{
+  "family": "student-management-api",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "512",
+  "memory": "1024",
+  "executionRoleArn": "YOUR_EXECUTION_ROLE_ARN",
+  "containerDefinitions": [
+    {
+      "name": "student-container",
+      "image": "IMAGE1_NAME",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 5000,
+          "hostPort": 5000,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ]
+}
